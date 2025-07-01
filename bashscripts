@@ -1,9 +1,0 @@
-#!/bin/bash
-bash $HOME/.dots/opensuse_scripts/source_builds/Ags
-bash $HOME/.dots/opensuse_scripts/source_builds/Emacs
-bash $HOME/.dots/opensuse_scripts/source_builds/Gtk4-layer-shell
-bash $HOME/.dots/opensuse_scripts/source_builds/Hyprland-contrib
-bash $HOME/.dots/opensuse_scripts/source_builds/Nvidia-vaapi-driver
-bash $HOME/.dots/opensuse_scripts/source_builds/Regreet
-bash $HOME/.dots/opensuse_scripts/source_builds/Swaylock-effects
-bash $HOME/.dots/opensuse_scripts/source_builds/Wl-gammarelay-rs

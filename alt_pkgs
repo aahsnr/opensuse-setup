@@ -1,4 +1,0 @@
-coreutils --> coreutils-single
-systemd --> systemd-mini
-gettext-runtime --> gettext-runtime-mini
-gettext-tools --> gettext-tools-mini

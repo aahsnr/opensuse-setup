@@ -1,6 +1,0 @@
-#!/bin/sh
-echo "@patterns-base-fips"
-sudo zypper install fips dracut-fips libcryptsetup12 libfreebl3 libgcrypt20 libgnutls30 libopenssl-3-fips-provider libopenssl-fips-provider libopenssl1_0_0 libopenssl1_1 libsoftokn3 openssh-fips strongswan-hmac
-
-echo "@patterns-base-apparmor"
-sudo zypper install apparmor-{abstractions,docs,parser,profiles,rpm-macros,utils,docs} audit yast2-apparmor libapparmor-devel python3-apparmor             

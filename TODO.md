@@ -1,2 +1,18 @@
 - [ ] Include features from both bazzite, aurora, and secureblue
 - [ ] Setup opensuse build system
+- [ ] Packages to update:
+  - [ ] atuin
+  - [ ] hyprpolkitagent
+  - [ ] hypridle
+  - [ ] hyprlock [major version bump]
+  - [ ] hyprpaper
+  - [ ] pyprland
+  - [ ] nwg-drawer
+  - [ ] starship
+  - [ ] tealdeer
+  - [ ] Zathura
+  - [ ] Zathura-PDF-Poppler
+- [ ] Install From Source
+  - [ ] hyprlux
+  - [ ] emacs-lsp-booster
+
