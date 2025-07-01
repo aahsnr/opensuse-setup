@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "@fonts"
+sleep 5
+sudo mkdir /usr/local/share/fonts/
+sudo cp -R $HOME/.dots/.fonts/* /usr/local/share/fonts/
+sudo chown -R root: /usr/local/share/fonts/
+sudo chmod 644 /usr/local/share/fonts/*
+sudo restorecon -vFr /usr/local/share/fonts/
+sudo fc-cache -v

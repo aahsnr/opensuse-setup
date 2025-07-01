@@ -1,0 +1,6 @@
+#!/bin/bash
+flatpak install flathub io.github.zen_browser.zen
+flatpak install flathub com.ticktick.TickTick
+flatpak install flathub org.onlyoffice.desktopeditors
+flatpak install flathub com.github.tchx84.Flatseal
+flatpak install flathub com.notesnook.Notesnook

@@ -1,0 +1,8 @@
+#!/bin/sh
+zypper addrepo -p 100 https://developer.download.nvidia.com/compute/cuda/repos/opensuse15/x86_64/  cuda
+
+sudo zypper install nvidia-open-driver-G06-signed-kmp-default kernel-firmware-nvidia-gspx-G06
+
+sudo zypper install libvdpau1 libva-utils Mesa-libva xf86-video-nv nvidia-video-G06 nvidia-compute-G06 nvidia-gl-G06 nvidia-utils-G06 
+
+sudo zypper install kernel-firmware-amdgpu xf86-video-amdgpu ffnvcodec-devel libva-devel

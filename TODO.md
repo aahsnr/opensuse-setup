@@ -1,0 +1,2 @@
+- [ ] Include features from both bazzite, aurora, and secureblue
+- [ ] Setup opensuse build system

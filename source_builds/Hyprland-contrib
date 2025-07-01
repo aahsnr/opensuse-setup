@@ -1,0 +1,8 @@
+#!/bin/sh
+echo "Installing Hyprland-contrib"
+sudo zypper in scdoc
+cd && git clone https://github.com/hyprwm/contrib.git
+cd contrib
+cd grimblast && make && sudo make install && cd ..
+cd hdrop && make && sudo make install && cd ..
+cd && sudo rm -rf contrib

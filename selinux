@@ -1,0 +1,18 @@
+#!/bin/sh
+echo "@patterns-base-fips"
+sleep 5
+sudo zypper install fips dracut-fips libcryptsetup12 libfreebl3 libgcrypt20 libgnutls30 libopenssl-3-fips-provider libopenssl-fips-provider libopenssl1_0_0 libopenssl1_1 libsoftokn3 openssh-fips strongswan-hmac
+
+echo "@patterns-base-selinux"
+sleep 5
+sudo zypper install --recommends policycoreutils selinux-autorelabel selinux-policy selinux-tools checkpolicy container-selinux restorecond selinux-policy-targeted selinux-policy-devel selinux-policy-sandbox
+
+    i  | apparmor-abstractions      | package | Required
+    i  | apparmor-parser            | package | Required
+    i  | apparmor-profiles          | package | Required
+    i  | audit                      | package | Required
+    i+ | patterns-base-apparmor     | package | Required
+    i  | patterns-base-minimal_base | package | Required
+    i  | apparmor-docs              | package | Recommended
+    i  | apparmor-utils             | package | Recommended
+    i  | yast2-apparmor             | package | Recommended
