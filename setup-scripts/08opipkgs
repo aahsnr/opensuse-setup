@@ -11,4 +11,5 @@ opi supergfxctl &&
 opi dart-sass &&
 opi python-materialyoucolor &&
 opi quickshell &&
-opi uwsm
+opi uwsm &&
+opi bibata-cursor-theme
