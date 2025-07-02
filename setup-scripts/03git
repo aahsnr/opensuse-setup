@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Setting Up Git"
+sleep 5
+sudo zypper in git-core git-credential-libsecret gnome-keyring subversion
+git config --global user.name "aahsnr"
+git config --global user.email "ahsanur041@proton.me"
+git config --global credential.helper /usr/libexec/git/git-credential-libsecret
+

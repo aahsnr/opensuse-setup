@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Installing System Packages"
+sleep 5
+sudo zypper install upower lynis sysstat acct rng-tools haveged man man-pages bzip2 cpio gzip logrotate lsscsi net-p7zip psmisc sed tar wget wireless-tools xz unrar unzip zip zram-generator xf86-input-libinput xorg-x11-fonts-core xorg-x11-server xorg-x11-driver-video xinit xterm xkeyboard-config xauth xorg-x11-libX11-ccache kernel-source kernel-syms dkms libvdpau1 libva-utils Mesa-libva xf86-video-nv nvidia-video-G06 nvidia-driver-G06-kmp-default nvidia-gl-G06 nvidia-utils-G06 kernel-firmware-nvidia kernel-firmware-all libglvnd libglvnd-devel kernel-firmware-amdgpu xf86-video-amdgpu ffnvcodec-devel   
+

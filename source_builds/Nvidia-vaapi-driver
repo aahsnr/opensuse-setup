@@ -1,6 +1,0 @@
-#!/bin/bash
-cd
-git clone https://github.com/elFarto/nvidia-vaapi-driver.git && cd nvidia-vaapi-driver
-meson setup build
-sudo meson install -C build
-cd && sudo rm -rf nvidia-vaapi-driver

@@ -1,9 +1,0 @@
-#!/bin/bash
-echo "Installing swaylock-effects"
-sudo zypper in "pkgconfig(wayland-protocols)" "pkgconfig(xkbcommon)" "pkgconfig(cairo)" gdk-pixbuf-devel scdoc
-cd && git clone https://github.com/mortie/swaylock-effects.git
-cd swaylock-effects
-meson build
-ninja -C build
-sudo ninja -C build install
-cd && sudo rm -rf swaylock-effects

@@ -1,0 +1,42 @@
+#!/bin/bash
+# app2unit installer for openSUSE
+# Adapted from AUR PKGBUILD: https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=app2unit-git
+
+# Exit on error and show commands
+set -e
+
+# Check for root privileges
+if [[ $EUID -ne 0 ]]; then
+    echo "ERROR: This script must be run as root. Use 'sudo' or login as root."
+    exit 1
+fi
+
+# Create temporary build directory with automatic cleanup
+tmp_dir=$(mktemp -d)
+trap 'rm -rf "$tmp_dir"' EXIT ERR
+
+# Install dependencies
+echo "Installing required dependencies..."
+zypper --non-interactive in git systemd bash coreutils
+
+# Clone repository
+echo "Cloning app2unit repository..."
+git clone --depth 1 https://github.com/Vladimir-csp/app2unit "$tmp_dir"
+
+# Install application
+echo "Installing app2unit..."
+install -Dm755 "$tmp_dir/app2unit" /usr/bin/app2unit
+install -Dm644 "$tmp_dir/LICENSE" "/usr/share/doc/packages/app2unit/LICENSE"
+
+# Update man database
+echo "Updating manual database..."
+mandb -q >/dev/null
+
+echo -e "\napp2unit has been successfully installed!"
+echo "To use: app2unit [desktop-file]"
+echo "Manual page: man app2unit"
+
+## Uninstallation
+# sudo rm /usr/bin/app2unit \
+#         /usr/share/man/man1/app2unit.1 \
+#         /usr/share/doc/packages/app2unit/LICENSE

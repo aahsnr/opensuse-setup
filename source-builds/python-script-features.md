@@ -1,0 +1,4 @@
+- Uses pkgconfig to install any dependencies
+- Has proper checksum support
+- Use release candidates only.
+- Remove the requirement to run the script as root by using sudo in the appropriate locations. 

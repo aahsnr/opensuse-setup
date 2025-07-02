@@ -1,0 +1,14 @@
+#!/bin/bash
+echo "Installing Opi Packages"
+sleep 5
+opi codecs && 
+opi thefuck &&
+opi nvidia-vaapi-driver &&
+opi gtk4-layer-shell &&
+opi asusctl &&
+opi asusctl-rog-gui && 
+opi supergfxctl &&
+opi dart-sass &&
+opi python-materialyoucolor &&
+opi quickshell &&
+opi uwsm

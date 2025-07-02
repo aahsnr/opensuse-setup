@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Setting Up for ASUS Laptops"
+sleep 5
+sudo zypper rm tlp
+sudo zypper rm suse-prime
+sudo systemctl enable power-profiles-daemon.service supergfxd
+

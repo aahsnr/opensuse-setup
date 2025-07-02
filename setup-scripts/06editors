@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Setting Up Editors"
+sleep 5
+sudo zypper in emacs cargo rust fd harfbuzz go google-noto-sans-symbols-fonts ImageMagick lua-language-server lua51 lua51-luarocks neovim npm nodejs python313-neovim ripgrep rust shfmt stix-fonts tectonic texlab wl-clipboard yarn 
+
+mkdir -p ~/.npm-global/lib
+npm config set prefix '~/.npm-global'
+export PATH=~/.npm-global/bin:$PATH
+npm install -g neovim

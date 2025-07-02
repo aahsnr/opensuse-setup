@@ -6,13 +6,13 @@
   - [ ] hypridle
   - [ ] hyprlock [major version bump]
   - [ ] hyprpaper
-  - [ ] pyprland
   - [ ] nwg-drawer
   - [ ] starship
   - [ ] tealdeer
   - [ ] Zathura
   - [ ] Zathura-PDF-Poppler
+  - [ ] Texlab
 - [ ] Install From Source
   - [ ] hyprlux
   - [ ] emacs-lsp-booster
-
+  - [ ] app2unit

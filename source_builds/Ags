@@ -1,8 +1,0 @@
-#!/bin/bash
-sudo zypper install typescript npm meson gjs-devel gtk3-devel gtk-layer-shell-devel gnome-bluetooth upower NetworkManager-devel libpulse-devel libdbusmenu-gtk3-devel libsoup-devel cmake pam-devel swww brightnessctl libgtop2
-cd && git clone --recursive https://github.com/Aylur/ags.git
-cd ags
-npm install
-meson setup build
-sudo meson install -C build
-cd && sudo rm -rf ags

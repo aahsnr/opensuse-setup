@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Installing Patterns"
+sleep 5
+sudo zypper in patterns-base-base patterns-base-apparmor patterns-base-fips patterns-base-sw_management patterns-base-x11 patterns-devel-base-devel_basis patterns-devel-base-devel_kernel patterns-devel-base-devel_rpm_build patterns-devel-C-C++-devel_C_C++ patterns-devel-python-devel_python3 patterns-devel-osc-devel_osc_build patterns-glibc-hwcaps-x86_64_v3 patterns-cockpit patterns-containers-container_runtime  
+

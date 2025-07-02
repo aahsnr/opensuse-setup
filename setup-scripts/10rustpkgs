@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Installing cargo packages"
+sleep 5
+cargo install --git https://github.com/donovanglover/hyprnome
+cargo install emacs-lsp-booster
+

@@ -8,6 +8,7 @@ export VISUAL="nvim"
 
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/go/bin"
+export PATH="$PATH:$HOME/.bun/bin"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.local/bin/hypr"
 export PATH="$PATH:$HOME/.config/emacs/bin"

@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Installing Python Packages"
+sleep 5
+sudo zypper in python313-base python313-black python313-flake8 python313-pip python313-pipx python313-pytest python313-requests python313-setuptools python313-tox python313-virtualenv python313-installer python313-build python313-hatch python313-Pillow python313-hatch_vcs  
+

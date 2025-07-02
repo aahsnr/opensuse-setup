@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "Initial Setup"
+sleep 5
+sudo cp -R ~/tumbleweed-setup/preconfigured-files/zypp.conf /etc/zypp/
+sudo cp -R ~/tumbleweed-setup/preconfigured-files/variables.sh /etc/profile.d/
+
+sudo zypper ref
+sudo zypper dup
+sudo zypper ar -cfp 90 https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/ packman
+sudo zypper dup --from packman --allow-vendor-change
+sudo zypper install flatpak opi curl wget
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+

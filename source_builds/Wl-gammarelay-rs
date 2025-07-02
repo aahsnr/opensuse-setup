@@ -1,5 +1,0 @@
-#!/bin/bash
-cd && git clone https://github.com/MaxVerevkin/wl-gammarelay-rs.git
-cd wl-gammarelay-rs
-cargo install wl-gammarelay-rs
-cd && sudo rm -rf wl-gammarelay-rs
