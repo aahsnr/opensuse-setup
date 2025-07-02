@@ -12,6 +12,8 @@
   - [ ] Zathura
   - [ ] Zathura-PDF-Poppler
   - [ ] Texlab
+  - [ ] hyprpicker
+  - [ ] jq
 - [ ] Install From Source
   - [ ] hyprlux
   - [ ] emacs-lsp-booster

@@ -11,5 +11,6 @@ bash $HOME/git/tumbleweed-setup/setup-scripts/09flatpak
 bash $HOME/git/tumbleweed-setup/setup-scripts/10rustpkgs
 
 echo "Installing Packages from Source"
-sudo bash ~/tumbleweed-setup/source_builds/app2unit
-bash ~/tumbleweed-setup/source_builds/Emacs
+# sudo bash ~/tumbleweed-setup/source_builds/app2unit
+# bash ~/tumbleweed-setup/source_builds/Emacs
+pipx install pyprland
